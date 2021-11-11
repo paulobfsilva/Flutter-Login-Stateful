@@ -38,16 +38,14 @@ class LoginScreenState extends State<LoginScreen> {
     return TextFormField(
       obscureText: true,
       decoration: InputDecoration(
-        labelText: 'Password',
-        hintText: '',
-        icon: Icon(Icons.lock),
+        labelText: 'Enter Password',
+        hintText: 'Password',
       ),
     );
   }
 
   Widget submitButton() {
-    return RaisedButton(
-      color: Colors.blue,
+    return ElevatedButton(
       child: Text('Login'),
       onPressed: () {},
     );
