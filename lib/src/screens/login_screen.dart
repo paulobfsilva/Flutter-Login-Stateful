@@ -40,6 +40,7 @@ class LoginScreenState extends State<LoginScreen> {
       decoration: InputDecoration(
         labelText: 'Enter Password',
         hintText: 'Password',
+        icon: Icon(Icons.lock),
       ),
     );
   }
@@ -48,6 +49,9 @@ class LoginScreenState extends State<LoginScreen> {
     return ElevatedButton(
       child: Text('Login'),
       onPressed: () {},
+      style: ElevatedButton.styleFrom(
+        primary: Colors.blue,
+      ),
     );
   }
 }
